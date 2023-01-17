@@ -14,7 +14,13 @@ function App() {
       <div className="App" style={{ backgroundColor: `${generateHex}` }}>
         <main className="main--container">
           <h1>Random Color</h1>
-          <button onClick={changeColor} className="rc--Button">
+
+          <button
+            onClick={() => {
+              setChangeColor(generateHex);
+            }}
+            className="rc--Button"
+          >
             GENERATE
           </button>
           <button onClick={changeColor} className="rc--Button">
