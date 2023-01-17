@@ -18,8 +18,8 @@ Our suggestions for breaking down the task into TODOs:
 - detailed list of features you'll need for the application above
 
 1. Button onClick changes background color
-   dependencies:
-   functions:
+   dependencies: "random-hex"
+   functions: randomHex.generate()
    React components: Button component
 2. Textfield that displays hex code
    dependencies:
