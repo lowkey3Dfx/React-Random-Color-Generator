@@ -4,14 +4,11 @@ import { useState } from 'react';
 
 function App() {
   const generateHex = randomHex.generate();
-  const [changeColor, setChangeColor] = useState(generateHex);
+  const [changeColor, setChangeColor] = useState('#');
 
-  // export default function changeColor(){
-  //   setChangeColor(() => )
-  // }
   return (
     <div className="bg--animation">
-      <div className="App" style={{ backgroundColor: `${generateHex}` }}>
+      <div className="App" style={{ backgroundColor: changeColor }}>
         <main className="main--container">
           <h1>Random Color</h1>
 
@@ -23,13 +20,8 @@ function App() {
           >
             GENERATE
           </button>
-          <button onClick={changeColor} className="rc--Button">
-            LIGHT
-          </button>
-          <button onClick={changeColor} className="rc--Button">
-            DARK
-          </button>
-          <h2 className="displayHex">{generateHex.toUpperCase()}</h2>
+          <p>Generated Color:</p>
+          <h2 className="displayHex">{changeColor.toUpperCase()}</h2>
         </main>
       </div>
     </div>
