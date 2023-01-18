@@ -43,11 +43,14 @@ body {
 }
 
 .displayHex {
+  color: white;
+  font-weight: 600;
+
   display: flex;
   justify-content: center;
   padding: 20px 20px;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   max-height: 80px;
   margin: 0;
   border-radius: 4px 12px 4px 12px;

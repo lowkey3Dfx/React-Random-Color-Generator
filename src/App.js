@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 function App() {
   const generateHex = randomHex.generate();
-  const [changeColor, setChangeColor] = useState('#');
+  const [changeColor, setChangeColor] = useState('');
 
   return (
     <div className="bg--animation">
@@ -20,8 +20,8 @@ function App() {
           >
             Generate
           </button>
-          <div className="displayHex">
-            <h2>Generated Color: {changeColor.toUpperCase()}</h2>
+          <div className="displayHex" style={{ backgroundColor: changeColor }}>
+            Generated Color: {changeColor.toUpperCase()}
           </div>
         </main>
       </div>
