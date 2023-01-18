@@ -20,7 +20,10 @@ function App() {
           >
             Generate
           </button>
-          <div className="displayHex" style={{ backgroundColor: changeColor }}>
+          <div
+            className="displayHex"
+            style={{ backgroundColor: changeColor.toUpperCase() }}
+          >
             Generated Color: {changeColor.toUpperCase()}
           </div>
         </main>

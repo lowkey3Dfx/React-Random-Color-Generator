@@ -45,7 +45,7 @@ body {
 .displayHex {
   color: white;
   font-weight: 600;
-
+  min-height: 80px;
   display: flex;
   justify-content: center;
   padding: 20px 20px;
