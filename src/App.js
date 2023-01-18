@@ -18,7 +18,7 @@ function App() {
             }}
             className="rc--Button"
           >
-            GENERATE
+            Generate
           </button>
           <p>Generated Color:</p>
           <h2 className="displayHex">{changeColor.toUpperCase()}</h2>
