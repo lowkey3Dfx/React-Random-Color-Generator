@@ -17,7 +17,7 @@ function App() {
 
           <button
             onClick={() => {
-              setChangeColor(generateHex);
+              setChangeColor(generateHex.toUpperCase());
             }}
             className="rc--Button"
           >
