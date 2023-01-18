@@ -20,8 +20,11 @@ function App() {
           >
             Generate
           </button>
-          <p>Generated Color:</p>
-          <h2 className="displayHex">{changeColor.toUpperCase()}</h2>
+
+          <h2 className="displayHex">
+            Generated Color:
+            {changeColor.toUpperCase()}
+          </h2>
         </main>
       </div>
     </div>
