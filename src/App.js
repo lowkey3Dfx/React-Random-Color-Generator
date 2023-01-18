@@ -8,7 +8,10 @@ function App() {
 
   return (
     <div className="bg--animation">
-      <div className="App" style={{ backgroundColor: changeColor }}>
+      <div
+        className="App"
+        style={{ backgroundColor: changeColor.toUpperCase() }}
+      >
         <main className="main--container">
           <h1>Random Color</h1>
 
